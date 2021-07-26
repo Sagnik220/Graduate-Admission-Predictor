@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>UNIPredict</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">UNIPredict</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of University Admission based on GRE,TOEFL and other parameters
+        <br>
+        </h5>
+      </div>
+
+    <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <label for="first_name"><b>GRE</b></label>
+          <br>
+          <input placeholder="GRE Scores 0-340" name="GRE" id="last_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>TOEFL</b></label>
+          <br>
+          <input id="last_name" name="TOEFL" placeholder="TOEFL Scores 0-120"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>University Rating</b></label>
+          <br>
+          <input id="last_name" name="University Rating" placeholder="Rating between 1 to 5"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>SOP</b></label>
+          <br>
+          <input id="last_name" name="SOP" placeholder="SOP strength out of 5"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>LOR</b></label>
+          <br>
+          <input id="last_name" name="LOR" placeholder="LOR Stregth out of 5"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>CGPA</b></label>
+          <br>
+          <input id="_name" name="CGPA" placeholder="CGPA out of 10" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>Research Experience</b></label>
+          <br>
+          <input id="_name" name="Research Experience" placeholder="0 or 1" type="text" class="validate">
+        </div>
+      <div class="row center" >
+          <button style="margin-top:200px; margin-left:-200px;margin-right:200px" type="submit" class="btn-large waves-effect waves-light blue">Predict Probability</button>
+      </div>
+    </form>
+    </div>
+      <br>
+        {{pred}}
+      <br>
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bio</h5>
+          <p class="grey-text text-lighten-4">I am Sagnik Mukherjee currently a Btech UG student interested in fields of Software Engineering,Machine Learning,Deep Learning</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/sagnik-mukherjee-23b21b16a/">LinkedIn</a></li>
+            <li><a class="white-text" href="https://github.com/Sagnik220/Forest-Fire-Prediction">Github</a></li>
+            <li><a class="white-text" href="https://twitter.com/sagnik123451">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12"I am Sagnik Mukherjee a Btech Undergrad,interested in fields of Software Engineering
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
