@@ -21,9 +21,9 @@ def predict():
     output='{0:.{1}f}'.format(prediction[0][0], 2)
 
     if output>str(0.5):
-        return render_template('index.html',pred='Probability of getting admitted is {}%'.format(output),bhai="Safe to Apply")
+        return render_template('index.html',pred='Probability of getting admitted is {}%'.format(output))
     else:
-        return render_template('index.html',pred='Probability of getting admitted {}%'.format(output),bhai="Not Safe to Apply")
+        return render_template('index.html',pred='Probability of getting admitted {}%'.format(output))
 
 
 if __name__ == '__main__':
